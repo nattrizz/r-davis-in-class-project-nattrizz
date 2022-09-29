@@ -41,3 +41,23 @@ list.files("data")
 dir.create("scripts")
 # save file in the specific folder
 
+
+
+weight <- vector()
+str(weight)
+weight <- c(5, 10 ,200, 24)
+length(weight
+       )
+str(weight)
+
+#combine more numbers to object
+weight <- c(weight, 39)
+weight
+
+# using [] allows you to grab somethings from an object
+
+weight[3]
+
+#multiple need to use c
+
+weight[c(1,3)]
