@@ -1,3 +1,4 @@
+abalone_try %>%
 library(tidyverse)
 abalone <-read_csv("data/Summer Experiment - Consumption-updated 11_12.csv")
 abalone
@@ -63,15 +64,16 @@ treatment_3 <- treatment_ab %>%
 treatment_1
 
 abalone_try <- treatment_ab %>% 
-  pivot_longer(cols = starts_with("week"), names_to = "weeks", names_prefix = "week", values_to = "grams")
+  pivot_longer(cols = starts_with("week_"), names_to = "weeks", names_prefix = "week_", values_to = "grams")
 abalone_try
 abalone_try %>% 
-  ggplot(aes(weeks, grams, group=Trough, color=Trough))+geom_line()
+  ggplot(aes(weeks, grams, group=Treatment, color=Trough))+geom_line()
 abalone_try %>% 
   filter(Treatment=="1") %>% 
   ggplot(aes(weeks, grams, group=Trough, color=Trough))+geom_line()
 
-
+abalone_try %>% 
+  print(n=100)
 
 
 
