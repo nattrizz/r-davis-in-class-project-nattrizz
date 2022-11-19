@@ -1,4 +1,4 @@
-abalone_try %>%
+
 library(tidyverse)
 abalone <-read_csv("data/Summer Experiment - Consumption-updated 11_12.csv")
 abalone
@@ -75,7 +75,7 @@ abalone_try %>%
 abalone_try %>% 
   print(n=100)
 
-
+read.table("noaa.txt")
 
 
 
