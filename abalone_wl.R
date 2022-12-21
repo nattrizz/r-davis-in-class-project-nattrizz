@@ -113,4 +113,5 @@ summary(ano_len)
 TukeyHSD(new_ano_weight)
 TukeyHSD(ano_len)
 
-plot(new_ano_weight,1)
+plot(new_ano_weight,2
+     )
